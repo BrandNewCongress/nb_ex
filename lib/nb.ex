@@ -1,18 +1,6 @@
 defmodule Nb do
-  @moduledoc """
-  Documentation for Nb.
-  """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Nb.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start_link do
+    Nb.Keys.start_link()
   end
 end
