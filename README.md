@@ -39,3 +39,7 @@ And you're good to go!
 %{"id" => id} = Nb.People.push(%{first_name: "Greg", last_name: "Greg", email: "greggreg@greg.edu"})
 Nb.People.update(id, %{"phone" => "2147030845"})
 ```
+
+## Documentation
+
+Clone the repository, and see `doc/index.html`.
