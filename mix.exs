@@ -26,7 +26,8 @@ defmodule Nb.Mixfile do
       {:httpotion, "~> 3.0.2"},
       {:poison, "~> 3.1"},
       {:timex, "~> 3.0"},
-      {:ex_doc, "~> 0.16", only: :dev}
+      {:ex_doc, "~> 0.16", only: :dev},
+      {:plug, "~> 1.0"}
     ]
   end
 end
