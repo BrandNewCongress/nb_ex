@@ -22,4 +22,12 @@ defmodule Nb.Events.Rsvps do
       some_error -> some_error
     end
   end
+
+  @doc """
+  Uses /sites/:site/pages/events/:id/rsvps to stream rsvps from event `id` on site `site`
+  """
+  @spec stream(binary, binary) :: list
+  def stream(event, site) do
+    Nb.Api.stream("sites/#{site}/pages/events/#{event}/rsvps" |> IO.inspect)
+  end
 end
