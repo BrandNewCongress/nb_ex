@@ -2,7 +2,7 @@ defmodule Nb.Keys do
   use Agent
 
   @keys Application.get_env(:nb, :keys)
-  @key_interval 100
+  @key_interval 1000
 
 
   # State takes the format index
