@@ -7,7 +7,7 @@ defmodule Nb.Api do
   Use Nb.Api.<rest_verb> to use this library's authentication and api key cycling
   defaults without using the endpoint wrappers
 
-  Also provides ~~ `Nb.Api.stream` ~~ 
+  Also provides ~~ `Nb.Api.stream` ~~
   """
   use HTTPotion.Base
 
@@ -52,7 +52,7 @@ defmodule Nb.Api do
   defp process_response_body(raw) do
     case Poison.decode(raw) do
       {:ok, body} -> body
-      {:error, raw} -> {:error, raw}
+      {:error, raw, _} -> {:error, raw}
     end
   end
 
